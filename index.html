@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  <header>
+ <h1 id="title" class="text-center">Code camper's Form</h1>
+  <p id="description" class="description text-center">Thank you for taking time to help us improve our platform</p>
+    </header>
+  <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name-label">Name</label>
+        <input type="text" placeholder="Enter your name" class="form-control"> <br>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email-label">Email</label> 
+        <input type="email" placeholder="Enter your Email" class="form-control" required> <br>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number-label">Age
+        </label>
+        <input type="number" placeholder="Enter your age" class="form-control" min="10"
+        max="99" required><br>
+       </div>
+    <div class="form-group">
+    <label for="dropdown">Which best describe your role</label>
+    <select name="dropdown" id="dropdown" class="form-control">
+      <option disabled selected value>Select current role</option>
+      <option value="Student">Student</option>
+      <option value="Full time job">Full time job</option>
+      <option value="Full time learner">Full time learner</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+      <option value="Other">Other</option>
+    </select>
+      </div>
+    <fieldset>
+      <legend>Would you recommand our paltform to your friends?</legend>
+      <label><input type="radio" class="input-radio" name="Definetly" checked>Definetly</label> <br>
+      <label><input type="radio" class="input-radio" name="Maybe">Maybe</label>  <br>
+      <label><input type="radio"  class="input-radio" name="Not sure">Not sure</label>  <br>
+    </fieldset>
+    <label for="feature">Which is your favorite feature of our platform</label>
+    <select name="feature" id="feature" class="form-control">
+     <option value="Challenges">Challenges</option>
+      <option value="Projects">Projects</option>
+      <option value="Community">Community</option>
+      <option value="Open source">Open source</option>
+    </select>
+    <fieldset>
+      <legend>what you like to see improved? (check all that apply)</legend>
+      <label><input type="checkbox" class="input-checkbox" value="Front-end projects">Front-end projects</label> <br>
+      <label><input type="checkbox" class="input-checkbox" value="Back-end projects">Back-end projects</label> <br>
+      <label><input type="checkbox" class="input-checkbox" value="Data visualisation">Data visualisation </label><br>
+      <label><input type="checkbox" class="input-checkbox" value="Challenges">Challenges</label></label> <br>
+      <label><input type="checkbox" class="input-checkbox" value="Open source community">Open source community</label> <br>
+      <label><input type="checkbox" class="input-checkbox" value="Gitter help rooms">Gitter help rooms</label> <br>
+      <label><input type="checkbox" class="input-checkbox" value="Videos">Videos</label></label><br>
+      <label><input type="checkbox" class="input-checkbox" value="City meetups">City meetups</label> <br>
+      <label><input type="checkbox" class="input-checkbox" value="Wiki">Wiki</label><br>
+      <label><input type="checkbox" class="input-checkbox" value="Forum">Forum </label><br>
+      <label><input type="checkbox" class="input-checkbox" value="Additional courses">Additional courses</label> <br>
+    </fieldset>
+    <p>Any comments or suggestions ?</p>
+  <textarea name="comment" form="usrform" id="comment" class="input-textarea">Enter comment here...</textarea> <br>
+    <input type="Submit" value="Submit" class="submit-button" value="submit-button">
+  </form>
+  </div>
+  
+</body>
+</html>
